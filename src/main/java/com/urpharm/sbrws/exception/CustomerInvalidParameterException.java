@@ -23,7 +23,14 @@ public class CustomerInvalidParameterException extends Exception {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
-	
-	
+
+	/**
+	 * @param message
+	 * @param cause
+	 */
+	public CustomerInvalidParameterException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
 
 }

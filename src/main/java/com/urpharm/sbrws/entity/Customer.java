@@ -22,7 +22,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author HOME
+ * @author JAFOJIAL
  *
  * Customer entity
  */

@@ -11,7 +11,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import com.urpharm.sbrws.entity.Customer;
 
 /**
- * @author HOME
+ * @author JAFOJIAL
  *
  * Customer repository interface
  */

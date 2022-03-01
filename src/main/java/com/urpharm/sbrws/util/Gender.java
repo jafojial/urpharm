@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Custmer gender
  *
- * @author HOME
+ * @author HOJAFOJIALME
  * @version 1.0
  */
 public enum Gender {

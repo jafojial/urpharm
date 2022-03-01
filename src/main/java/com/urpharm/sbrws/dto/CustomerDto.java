@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * @author HOME
+ * @author JAFOJIAL
  *
  * Customer Dto
  */

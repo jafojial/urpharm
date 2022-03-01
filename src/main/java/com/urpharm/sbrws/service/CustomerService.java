@@ -24,7 +24,7 @@ import com.urpharm.sbrws.repository.CustomerRepository;
 
 
 /**
- * @author HOME
+ * @author JAFOJIAL
  *
  */
 @Repository
@@ -33,12 +33,6 @@ public class CustomerService implements ICustomerService{
 	@Autowired
 	private CustomerRepository customerRepository;
 	
-	@Override
-	public Customer getCustomer(Long id) {
-		// TODO Auto-generated method stub
-		return customerRepository.findById(id).get();
-	}
-
 
 	@Override
 	public CustomerDto createCustomer(CustomerDto custDto) throws Exception {
@@ -63,20 +57,6 @@ public class CustomerService implements ICustomerService{
         CustomerDto customerResponse = mapToDTO(newCustomer);
 		
 		return customerResponse;
-	}
-	
-
-	@Override
-	public Customer saveCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		return customerRepository.save(customer);
-	}
-
-
-	@Override
-	public List<Customer> getCustomers() {
-		// TODO Auto-generated method stub
-		return (List<Customer>) customerRepository.findAll();
 	}
 	
 	
@@ -105,69 +85,6 @@ public class CustomerService implements ICustomerService{
         customerResponse.setLast(customers.isLast());
 
         return customerResponse;
-	}
-
-
-	@Override
-	public List<Customer> getCustomerFirstnameContains(String name) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByFirstnameContainingIgnoreCase(name);
-	}
-
-
-	@Override
-	public List<Customer> findCustomersByFirstnameLike(String firstname) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByFirstnameLikeIgnoreCase(firstname);
-	}
-
-
-	@Override
-	public List<Customer> findCustomersByFirstnameContaining(String firstname) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByFirstnameContainingIgnoreCase(firstname);
-	}
-
-
-	@Override
-	public List<Customer> findCustomersByLastnameLike(String lastname) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByLastnameLikeIgnoreCase(lastname);
-	}
-	
-
-	@Override
-	public Customer getCustomerByEmail(String email) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByEmail(email).get();
-	}
-
-
-	@Override
-	public List<Customer> findCustomersByChild(int child) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByChild(child);
-	}
-
-
-	@Override
-	public List<Customer> findCustomersByActive(Boolean status) {
-		// TODO Auto-generated method stub
-		return customerRepository.findByActive(status);
-	}
-
-
-	@Override
-	public void deleteCustomer(Long id) {
-		// TODO Auto-generated method stub
-		customerRepository.deleteById(id);
-	}
-
-
-	@Override
-	public void deleteCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		customerRepository.delete(customer);
 	}
 	
 	
