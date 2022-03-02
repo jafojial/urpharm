@@ -22,9 +22,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author HOME
- *
  * Customer entity
+ * 
+ * @author JAFOJIAL
+ *
  */
 @Entity
 @Table(name="URPHARM_CUST")
@@ -62,5 +63,35 @@ public class Customer implements Serializable {
 	
 	@Column
 	private Date createdAt = new Date();
+
+	/**
+	 * @param firstname
+	 * @param lastname
+	 * @param email
+	 */
+	public Customer(String firstname, String lastname, String email) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+	}
+
+	/**
+	 * @param firstname
+	 * @param lastname
+	 * @param email
+	 * @param child
+	 * @param dob
+	 */
+	public Customer(String firstname, String lastname, String email, int child, Date dob) {
+		super();
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+		this.child = child;
+		this.dob = dob;
+	}
+	
+	
 	
 }

@@ -11,9 +11,10 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import com.urpharm.sbrws.entity.Customer;
 
 /**
- * @author HOME
- *
  * Customer repository interface
+ * 
+ * @author JAFOJIAL
+ *
  */
 public interface CustomerRepository extends PagingAndSortingRepository<Customer, Long> {
 	
