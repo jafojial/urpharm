@@ -24,6 +24,8 @@ import com.urpharm.sbrws.repository.CustomerRepository;
 
 
 /**
+ * Customer service
+ * 
  * @author JAFOJIAL
  *
  */

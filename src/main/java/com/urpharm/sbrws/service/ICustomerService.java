@@ -7,6 +7,8 @@ import com.urpharm.sbrws.dto.CustomerDto;
 import com.urpharm.sbrws.dto.CustomerResponse;
 
 /**
+ * Customer service interface
+ * 
  * @author JAFOJIAL
  *
  */

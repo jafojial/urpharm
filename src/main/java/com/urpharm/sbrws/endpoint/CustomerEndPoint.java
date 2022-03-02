@@ -21,7 +21,10 @@ import com.urpharm.sbrws.dto.CustomerResponse;
 import com.urpharm.sbrws.service.CustomerService;
 import com.urpharm.sbrws.util.AppConstants;
 
+
 /**
+ * Customer endpoint
+ * 
  * @author JAFOJIAL
  *
  */
@@ -43,7 +46,7 @@ public class CustomerEndPoint {
 		
 		customer = customerService.createCustomer(custDto);
 		
-		return new ResponseEntity<>(customer, HttpStatus.OK);
+		return new ResponseEntity<>(customer, HttpStatus.CREATED);
 	}
 	
 	
